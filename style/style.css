@@ -1,18 +1,104 @@
 body {
   background-color: #202124;
 }
+body.light-theme {
+  background-color: white;
+  color: black;
+}
+
+body.light-theme .header a,
+body.light-theme i,
+body.light-theme img {
+  color: black;
+}
+body.light-theme footer{
+  background-color: #bfbfbf;
+}
+body.light-theme .footer-top p, body.light-theme .footer-bottom li{
+  color: #333333;
+}
+body.light-theme .footer-top{
+  border-bottom: 1px solid #20212446;
+}
+body.light-theme .search {
+  background-color: #d4d3d3;
+}
+
+body.light-theme input {
+  background-color: #ffffff00;
+  color: black;
+}
+body.light-theme .btn-botton button {
+  background-color: #e9e7e7; /* پس‌زمینه روشن‌تر */
+  color: #333333; /* متن تیره‌تر */
+}
+body.light-theme .translate p {
+  color: #000000; /* متن تیره‌تر */
+}
+body.light-theme .translate a {
+  color: #1c76f3;
+}
+body.light-theme .change-bg-color button i:hover{
+  filter: drop-shadow(1px 1px 10px black);
+  transition: all 0.4s ease-in-out;
+}
+body.light-theme .user i:hover {
+  filter: drop-shadow(1px 1px 10px rgb(84, 238, 53));
+  transition: all 0.3s ease-in;
+}
+
+
+
+
 .header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
 }
-.header a,
-i {
+.change-bg-color{
+  position: absolute;
+  left: 30px;
+  top: 0;
+}
+.change-bg-color button{
+  all: unset;
+}
+.change-bg-color button i{
+  font-size: 20px;
+  cursor: pointer;
+}
+.change-bg-color button i:hover{
+  filter: drop-shadow(1px 1px 10px white);
+  transition: all 0.4s ease-in-out;
+}
+.icon-2{
+  display: none;
+}
+.footer-top .border{
+  border-bottom: 1px solid black;
+}
+.apps .fcircle-2{
+  display: none;
+  margin: 5px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.apps .fcircle-2:hover {
+  background-color: rgba(112, 110, 110, 0.205);
+  transition: all 0.3s ease-in;
+}
+
+.change-bg-color-2 button i:hover{
+  filter: drop-shadow(1px 1px 10px black);
+  transition: all 0.4s ease-in-out;
+}
+
+.header a, i {
   padding: 13px;
 }
-a,
-i,
-img {
+a, i, img {
   text-decoration: none;
   color: #fff;
   font-family: Arial, sans-serif;
@@ -23,6 +109,7 @@ img {
   cursor: pointer;
   border-radius: 100%;
 }
+
 .apps {
   position: relative;
 }
@@ -41,7 +128,7 @@ img {
 }
 
 .user i:hover {
-  filter: drop-shadow(2px 2px 10px rgb(241, 215, 98));
+  filter: drop-shadow(1px 1px 10px rgb(241, 215, 98));
   transition: all 0.3s ease-in;
 }
 
@@ -55,6 +142,9 @@ a.gmail-text:hover {
   justify-content: center;
   flex-direction: column;
   height: 81.7vh;
+}
+.icon-1{
+  display: block;
 }
 .search {
   display: flex;
@@ -106,7 +196,9 @@ input {
   margin-top: 30px;
   font-family: Arial, sans-serif;
 }
-.btn-botton button {
+
+.btn-botton button{
+  display: block;
   all: unset;
   background-color: #ffffff15;
   padding: 10px 15px;
@@ -226,3 +318,4 @@ li:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in;
 }
+
