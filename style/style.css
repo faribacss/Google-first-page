@@ -147,7 +147,7 @@ footer {
   color: #fff;
   font-family: Arial, sans-serif;
   font-size: 14px;
-  margin: 10px 18px;
+  margin: 10px 20px;
 }
 .footer-bottom {
   display: flex;
@@ -159,14 +159,16 @@ footer {
 ul {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   color: #fff;
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
 li {
-  margin: 10px 18px;
+  margin: 10px 20px;
   cursor: pointer;
+  flex-grow: 1;
 }
 li:hover {
   text-decoration: underline;
